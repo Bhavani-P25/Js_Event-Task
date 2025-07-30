@@ -1,0 +1,70 @@
+<!Doctype>
+<html>
+<head>
+<title>Events</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<style>
+ button {
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 4px;
+    }
+</style>
+</head>
+<body>
+<center>
+<div id="bikesection">
+<h2>Royal Enfield</h2>
+<img src="Images/RE-Bike.jpg" width="300px" height="300px"; >
+<pre style="font-family: Arial, sans-serif; text-align:ceter";>
+        The Royal Enfield Classic 350 is a timeless icon that blends old-school styling with modern-day performance.     
+     Its vintage design, teardrop fuel tank, and classic metal body panels pay tribute to the war-era motorcycles,    
+	 yet underneath the retro skin lies a thoroughly updated engine and chassis. Powered by a 349cc single-cylinder, 
+	 air-oil cooled engine, the bike produces a smooth and refined ride—perfect for city cruising or long weekend      
+	 rides.The Classic 350 is known for its thumping exhaust note, comfortable riding position, and reliable handling. 
+It's available in multiple colors and editions, including Signals, Redditch, and Dark series.</pre>
+  <a href="https://chatgpt.com/c/6889bb01-a510-8013-9740-61e120bd7cd6">Learn more about bikes</a><br><br>
+  <button onclick="shownature()" >Go to Nature</button>
+</div>
+
+<div id="natureSection">
+<h2>Nature</h2>
+<img src="Images/Nature.jpeg" width="500px" height="300px"; >
+<pre style="font-family: Arial, sans-serif; text-align:ceter";>
+Nature images encompass photographs, illustrations, or any visual representation of the natural world. 
+They can range from vast landscapes like mountains and oceans to close-up shots of flowers, insects, 
+or even the patterns in moss. Nature photography often captures the beauty, diversity, and sometimes 
+        the harsh realities of the environment, while also inspiring appreciation and awareness of the natural world. .</pre>
+  <a href="https://www.google.com/search?q=nature+images+and+explain&sca_esv=47b16ba36d203663&rlz=1C1VDKB_enIN1136IN1136&sxsrf=AE3TifOj">Learn more about Nature</a><br><br>
+  <button onclick="showbike()" >Go to Bike</button>
+</div>
+</center>
+
+<script>
+let bike= document.getElementById("bikesection");
+let nature= document.getElementById("natureSection");
+
+ window.onload= function(){
+ bike.style.display="block";
+ nature.style.display="none";
+ }
+ 
+ function shownature(){
+  bike.style.display="none";
+ nature.style.display="block";
+ 
+ }
+ 
+ function showbike(){
+  nature.style.display= "none";  
+  bike.style.display = "block"; 
+ 
+ }
+
+</script>
+</body>
+</html>
